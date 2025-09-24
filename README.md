@@ -84,8 +84,8 @@ Deploy for free on Streamlit Community Cloud:
 4. Set your OpenAI API key as a secret
 
 ## Skills Demonstrated
-Retrieval-Augmented Generation (RAG)
-Multi-step reasoning & agent planning
-Semantic search using vector embeddings
-Prompt engineering for summarization & citations
-Interactive Streamlit application development
+Retrieval-Augmented Generation (RAG),
+Multi-step reasoning & agent planning,
+Semantic search using vector embeddings,
+Prompt engineering for summarization & citations,
+Interactive Streamlit application development.
