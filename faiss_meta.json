@@ -1,0 +1,666 @@
+[
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "The attached DRAFT document (provided here for historical purposes) has been superseded by \nthe following publication: \n \nPublication Number:  NIST Interagency Report 8105 \nTitle: Report on Post-Quant"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "The following information was posted with the attached DRAFT document: \nFeb. 3, 2016 \nNIST IR 8105 \nDRAFT Report on Post-Quantum Cryptography \nNIST requests public comments on NISTIR 8105, Report on P"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "computers. If large-scale quantum computers are ever built, they will be able to break many of the public-\nkey cryptosystems currently in use. This would seriously compromise the confidentiality and i"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "and classical computers, and can interoperate with existing communications protocols and networks. This \nInternal Report shares the National Institute of Standards and Technology (NIST)’s current unde"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "infrastructures and therefore emphasizes the need for agencies to focus on crypto agility.  \n  \nThe public comment period will close on: March 9, 2016.  \nSend comments and/or questions to NISTIR8105-c"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 \nDRAFT \nReport on Post-Quantum Cryptography \n \nLily Chen \nStephen Jordan \nYi-Kai Liu \nDustin Moody \nRene Peralta \nRay Perlner \nDaniel Smith-Tone \n \n \n \n \n \nThis publication is available fr"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 \nDRAFT \nReport on Post-Quantum Cryptography \n \nLily Chen \nYi-Kai Liu \nStephen Jordan \nDustin Moody \nRene Peralta \nRay Perlner \nDaniel Smith-Tone \nComputer Security Division \nInformation Te"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "ii \nNational Institute of Standards and Technology Internal Report 8105  \n15 page (February 2016) \nThis publication is available free of charge \n \nCertain commercial entities, equipment, or materials "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "available for the purpose.  \nThere may be references in this publication to other publications currently under development by NIST in \naccordance with its assigned statutory re sponsibilities. The inf"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "operative. For pla nning and transition purposes, f ederal agencies may wish to closely follow the development of \nthese new publications by NIST.   \nOrganizations are encouraged to review all draft p"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR8105-comments@nist.gov  \nPublic comment period: February 3, 2016 through March 9, 2016 \nAll comments are subject to release under the Freedom of Information Act (FOIA). \n \nNational Institute of "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "iii \nReports on Computer Systems Technology \nThe Information Technology Laboratory (ITL) at the National Institute of Standards and \nTechnology (NIST) promotes the U.S. economy and public welfare by p"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "the development and productive use of information technology. ITL’s responsibilities include the \ndevelopment of management, administrative, technical, and physical standards and guidelines for \nthe c"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "machines that exploit quantum mechanical phenomena to solve mathematical problems that are \ndifficult or intractable for conventional computers. If large-scale quantum computers are ever \nbuilt, they "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "cryptography) is to develop cryptographic systems that are secure against both quantum and \nclassical computers, and can interoperate with existing communications protocols and networks.  \nThis Intern"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "challenge of moving to new cryptographic infrastructures and therefore emphasizes the need for \nagencies to focus on crypto agility. \n \nKeywords \nPublic-key cryptography; Post-quantum cryptography; Qu"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \niv \n \n \nTable of Contents \n1 Introduction .................................................................................................."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "4 The Path Forward ................................................................................................... 5 \n \nList of Appendices \nAppendix A— References ................................."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 1 \n1 Introduction \nIn the last three decades, public key cryptography has become an indispensable component of \nour global communication di"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "the ability of individuals, businesses and governments to communicate securely is of the utmost \nimportance. \nMany of our most crucial communication protocols rely principally on three core cryptograp"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "certain number theoretic problems such as Integer Factorization or the Discrete Log Problem \nover various groups.   \nIn 1994, Peter Shor of Bell Laboratories showed that quantum computers, a new techn"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "modern communication--- from key exchange to encryption to digital authentication--- in peril. \nThe discovery that quantum computers could be utilized to solve certain problems faster than \nclassical "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Researchers are working on these questions. \nIn the twenty years since Shor’s discovery, the theory of quantum algorithms has developed \nsignificantly. Quantum algorithms achieving exponential speedup"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "small. In contrast, more modest speedups have been developed for broad classes of problems \nrelated to searching, collision finding, and evaluation of Boolean formulae. In particular, \nGrover’s search"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "impact of (large-scale) quantum computers on common cryptographic algorithms, such as RSA \nand AES.  It is not known how far these quantum advantages can be pushed, nor how wide is the \ngap between fe"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "1 NIST standardized digital signature schemes in [FIPS 186-4], as well as public key based key establishment schemes in [SP800-\n56A] (using key exchange) and [SP800-56B] (using public key encryption)."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 2 \npossibility, many scientists now believe it to be merely a significant engineering challenge. Some \nengineers even predict that within t"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "significant effort to ensure a smooth and secure migration from the current widely used \ncryptosystems to their quantum computing resistant counterparts.  Therefore, regardless of \nwhether we can esti"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "A large international community has emerged to address the issue of information security in a \nquantum computing future, in the hope that our public key infrastructure may remain intact by \nutilizing "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "funding agencies, most notably in Europe and Japan, through the EU projects PQCrypto and \nSAFEcrypto, and the CREST Crypto-Math project in Japan.  \nThese efforts have led to advances in fundamental re"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Telecommunications Standards Institute (ETSI) has held three “Quantum-Safe Cryptography\" \n                                                 \n2 Post-quantum cryptography should not be conflated with qua"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "quantum computer \nAES-256 Symmetric key Encryption Larger key sizes needed \nSHA-256, SHA-3  Hash functions Larger output needed \nRSA Public key Signatures, key \nestablishment \nNo longer secure \nECDSA,"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 3 \nworkshops, and in 2015, NIST held a workshop on “Cybersecurity in a Post-Quantum World,” \nwhich was attended by over 140 people. \nNIST h"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Standard (AES), have been developed with broad participation from academia and industry, and \nhave been widely adopted because they are effective solutions, thus helping to protect US \ninformation and"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "technologies is intensifying. Equally clear is the urgency, implied by these investments, of the \nneed for standardizing new post-quantum public key cryptography. It is critical to engage with \nthe co"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "initial plan to move forward. \n \n2 An Overview of Quantum-Resistant Cryptography \nThe most important uses of public-key cryptography today are for digital signatures and key \nestablishment.  As mentio"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "hardness of the discrete log problem.  In contrast, the impact on symmetric-key systems will not \nbe as drastic (see Table 1).  Grover’s algorithm provides a quadratic speed up for quantum search \nalg"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "search algorithms is impossible, suggesting that symmetric algorithms and hash functions should \nbe usable in a quantum era [2].    \nConsequently, the search for algorithms believed to be resistant to"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "families include those based on lattices, codes, and multivariate polynomials, as well as a \nhandful of others.  For further information, see [3, 4]. \nLattice-based cryptography – Cryptosystems based "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "cryptography.  Most lattice-based key establishment algorithms are relatively simple, efficient, \nand highly parallelizable.  Also, the security of some lattice-based systems are provably secure \nunde"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 4 \nhas proven difficult to give precise estimates of the security of lattice schemes against even \nknown cryptanalysis techniques. \nCode-ba"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Newer variants have introduced more structure into the codes in an attempt to reduce the key \nsizes, however the added structure has also led to successful attacks on some proposals. While \nthere have"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "systems of multivariate polynomials over finite fields.  Several multivariate cryptosystems have \nbeen proposed over the past few decades, with many having been broken [5].  While there have \nbeen som"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "functions.  Their security, even against quantum attacks, is well understood.  Many of the more \nefficient hash-based signature schemes have the drawback that the signer must keep a record of \nthe exa"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "unlimited, but this also increases the signature size.   \nOther - A variety of systems have been proposed which do not fall into the above families.  One \nsuch proposal is based on evaluating isogenie"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "known.  Like some other proposals, for example those based on the conjugacy search problem \nand related problems in braid groups, there has not been enough analysis to have much \nconfidence in their s"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "replace.  This may result in needing to change various Internet protocols, such as the Transport \nLayer Security (TLS) protocol, or the Internet Key Exchange (IKE).  The ways in which this \nshould be "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "schemes.  However, this is similar to the state today.  Although most public-key cryptosystems \ncome with a security proof, these proofs are based on unproven assumptions.  Thus the lack of \nknown att"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 5 \nNonetheless, NIST believes that more research and analysis are needed before any of the above \nproposed post-quantum algorithms could be"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Peter Shor’s 1994 discovery of a polynomial-time quantum algorithm for integer factorization \n[6]. At the time, it was unclear whether quantum computing would ever be a fundamentally \nscalable technol"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "and threshold theorems [7]. These threshold theorems show that if the error rate per logical \noperation (“quantum gate”) in a quantum computer can be brought below a fixed threshold then \narbitrarily "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "error rates per quantum gate. Simultaneously, theorists have developed new quantum error \ncorrection procedures yielding higher fault-tolerance thresholds. Recently, some experiments \nusing ion traps "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "and industry. However, it is clear that substantial long-term efforts are needed to move from \npresent day laboratory demonstrations involving one to ten qubits up to large-scale quantum \ncomputers in"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "the D-wave machine), analog quantum simulators, and boson sampling devices. Some of these \ndevices have been scaled up to far larger numbers of qubits than digital quantum computers \nhave. However, du"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "computing technologies. To maintain security against classical attacks, NIST has already \nrecommended transitions from key sizes and algorithms that provide 80 bits of security, to key \nsizes that pro"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 6 \nresearchers working on building a quantum computer have estimated that it is likely that a \nquantum computer capable of breaking RSA-204"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "classical computers. Cryptosystems offering 80 bits of security or less, which were phased out in \n2011-2013, are at the greatest risk: they can be broken now at a cost ranging from tens of \nthousands"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Thus, transitioning from 112 to 128 bits of security is perhaps less urgent than transitioning from \nexisting cryptosystems to post-quantum cryptosystems. This post-quantum transition raises many \nfun"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "attacking it with a classical computer (e.g. an algorithm is said to have 128 bits of security if the \ndifficulty of attacking it with a classical computer is comparable to the time and resources \nreq"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "112-bit security level be phased out by 2031. \nUnfortunately, the bits-of-security paradigm does not take into account the security of algorithms \nagainst quantum cryptanalysis, so it is inadequate to"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "double the key lengths to compensate for the quadratic speedup achieved by Grover’s algorithm. \nBut this recommendation may be overly conservative, as quantum computing hardware will \nlikely be more e"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "research in this area is urgently needed. \nThe development of standards for post-quantum cryptography will require significant resources \nto analyze candidate quantum-resistant schemes, and will requi"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "development of quantum computing hardware and the NSA’s recent changes to its Suite B \nguidance [19]. This provides an opportunity for engagement with the research community that \nmay not come again b"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 7 \nNIST is taking the following steps to initiate a standardization effort in post-quantum \ncryptography.  NIST plans to specify preliminar"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "end of the year. At that time NIST will begin accepting proposals for quantum-resistant public \nkey encryption, digital signatures, and key exchange algorithms. NIST intends to select at least \none al"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "While this process will have many commonalities with the processes that led to the \nstandardization of AES [20] and SHA3 [21], this is not a competition. NIST sees its role as \nmanaging a process of a"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "resistant public key cryptography will be similar to the ongoing block cipher modes development \nprocess [22]. \nWhen standards for quantum-resistant public key cryptography become available, NIST will"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "replacements for currently standardized public-key algorithms are not yet ready, a focus on \nmaintaining crypto agility is imperative."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 8 \nAppendix A—References \n[FIPS 186-4] \n \nFederal Information Processing Standards (FIPS) 186-4, Digital Signature \nStandard (DSS), Nationa"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Cryptography, National Institute of Standards and Technology, \nGaithersburg, Maryland, May 2013, 138pp. \nhttp://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-\n56Ar2.pdf. \n[SP800-56B] \n \nNI"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Gaithersburg, Maryland, September 2014, 131p. \nhttp://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-\n56Br1.pdf. \n[1] M. Mosca, Cybersecurity in an era with quantum computers: will we be \nr"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "[3] European Telecommunications Standards Institute White Paper No. 8, \nQuantum Safe Cryptography and Security: An Introduction, Benefits, \nEnablers and Challenges, June 2015.  \nhttps://portal.etsi.or"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "http://dx.doi.org/10.1145/1527017.1527028.  \n[5] V. Dubois, P. Fouque, A. Shamir and J. Stern, Practical cryptanalysis of \nSFLASH, Advances in Cryptology — CRYPTO 2007, Lecture Notes in \nComput. Sci. "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 9 \n1484–1509.  http://dx.doi.org/10.1137/s0036144598347011.  \n[7] J. Preskill, Reliable Quantum Computers, Proc. Roy. Soc. London A, 454, \n"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Chiaro, J. Mutus, C. Neil, Superconducting quantum circuits at the surface \ncode threshold for fault tolerance, Nature 508 (7497), 2014, pp. 500–503.  \nhttp://dx.doi.org/10.1038/nature13171.  \n[10] T."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "[SP 800-\n131A] \nNIST Special Publication (SP) 800-131A Revision 1, Transitions: \nRecommendation for Transitioning the Use of Cryptographic Algorithms and \nKey Lengths, National Institute of Standards "
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "https://www.youtube.com/watch?v=wWHAs--HA1c [accessed 11/15/2015]. \n[12] A. Lenstra, E. Tromer, A. Shamir, W. Kortsmit, B. Dodson, J. Hughes, P. \nLeyland, Factoring Estimates for a 1024-bit RSA Modulu"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Cryptology ePrint Archive 2015/967, 2015. http://eprint.iacr.org/. \n[14] J. Bos, M. Kaihara, T. Kleinjung, A. Lenstra, P. Montgomery, On the \nsecurity of 1024-bit RSA and 160-bit Elliptic Curve Crypto"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Forward Secrecy: How Diffie-Hellman Fails in Practice, in: Proc. of the \n22nd ACM Conference on Computer and Communications Security, Oct. \n2015. http://dx.doi.org/10.1145/2810103.2813707."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "NISTIR 8105 (DRAFT)  [Report on Post-Quantum Cryptography] \n 10 \n[SP 800-57] NIST Special Publication (SP) 800-57 Part 1 Revision 3, Recommendation \nfor Key Management – Part 1: General, National Inst"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Workshop on Quantum-Safe Cryptography, 2014. \nhttps://docbox.etsi.org/workshop/2014/201410_CRYPTO/S07_Systems_and\n_Attacks/S07_Groves_Annex.pdf. \n[17] M. Kaplan, G. Leurent, A. Leverrier, M. Naya-Plas"
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "Symposium on Information Theory (ISIT), IEEE, 2010, pp. 2682-2685.  \nhttp://dx.doi.org/10.1109/isit.2010.5513654. \n[19] National Security Agency, Cryptography Today, report, August 2015. \nhttps://www."
+  },
+  {
+    "source": "data\\post_quantum.pdf",
+    "text": "[22] NIST, Modes Development, \nhttp://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": " Corresponding author: Rafiul Azim Jowarder. \nCopyright © 2024 Author(s) retain the copyright of this article. This article is published under the terms of the Creative Commons Attribution Liscense 4"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \nPublication history: Received on 06 August 2024; revised on 14 September 2024; accepted on 16 September 2024 \nArti"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "systems, which is a concern in ensuring the security of data and communications. This paper seeks to discuss the threats \nof quantum computing, particularly on cryptographic systems like the RSA and e"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "must prepare for this continuously advancing world. The material looks into the interaction of quantum computing and \ncybersecurity to enable stakeholders to develop anticipations and expectations of "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "1. Introduction\nQuantum computing has emerged as a groundbreaking technology with the potential to transform various facets of our \nlives. However, this power brings significant responsibilities, part"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "its potential effects on cybersecurity, identify vulnerabilities in current encryption methods, suggest solutions for \nsafeguarding data against quantum threats, and evaluate the advantages and challe"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "computers that use bits to represent data as 0 or 1, quantum computers utilize quantum bits, or qubits, which can exist \nin multiple states simultaneously. Central to quantum computing are two fundame"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "computers use algorithms that leverage superposition and entanglement to perform calculations. These algorithms \nmanipulate qubits through operations like rotations and controlled gates, enabling comp"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n331 \nHowever, harnessing quantum mechanics presents challenges. External disturbances are extremely sensitive and "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "solving complex problems more efficiently. As advancements in this dynamic field continue, we can anticipate \ngroundbreaking developments across various industries, from drug discovery to optimization"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "including cybersecurity. While traditional computers struggle with complex encryption algorithms, quantum computers \npossess unparalleled processing power that could potentially dismantle  current cry"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "simultaneously, greatly enhancing computational capabilities. Consequently, tasks that might take classical computers \ncenturies can be completed by quantum machines in mere seconds or minutes.  \nThes"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "these algorithms become susceptible to attacks. Public-key cryptography standards such as RSA and elliptic curve (ECC), \nwidely used in secure communications and online transactions, could be at risk."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "and government agencies safeguarding classified intelligence.  \nResearchers are investigating new encryption methods called post -quantum or \" quantum-safe\" cryptography to \naddress these risks. These"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "multivariate polynomial cryptography, and hash functions derived from one -way functions, such as Merkle trees and \nLamport signatures. \nGiven their broad implications for various sectors and the deve"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "NIST's Post -Quantum Cryptography Standardization Process, challen ges persist. Many quantum -safe cryptographic \nsolutions demand more computational resources and longer processing times."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n332 \n2. Emerging Threats from Quantum Computing \n2.1. Encryption Attacks \n2.1.1. Quantum Attacks on Encryption \nTh"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "numbers or solving intricate mathematical problems. However, quantum comput ers can tackle these challenges \nsignificantly faster than their classical counterparts. \nA primary vulnerability exists in "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "wishing to communicate securely. The security of these systems hinges on the difficulty of factoring large prime \nnumbers or computing discrete logarithms. \n \nFigure 2 Quantum Computing Threats \nQuant"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "Another area at risk involves symmetric-key algorithms, such as AES (Advanced Encryption Standard), which are widely \nused to protect sensitive information. While Shor's algorithm isn't directly threa"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "systems, it effect ively halves their strength. For instance, a 256 -bit AES key would provide only 128 bits of security \nagainst a sufficiently powerful quantum computer executing Grover's algorithm."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "encryption schemes that can withstand attacks from classical and quantum threats."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n333 \n2.1.2. Vulnerability of Widely Used Cryptographic Protocols \n Many existing cryptographic protocols rely on t"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "2.2.1. Threat to Stored Encrypted Data: \nQuantum computers could decrypt large volumes of previously secured data, posing a significant risk to information \nstored in databases across various sectors."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "2.3. Other Potential Threats \n2.3.1. Malware and Quantum-Enhanced Cyber Attacks \n Integrating quantum computing into cyber attack strategies could lead to more sophisticated malware and cyber \nthreats"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "vulnerabilities in QKD systems could be exploited, raising concerns about the overall reliability of quantum \ncommunication methods. \n3. Mitigation Strategies \n3.1. Potential Solutions for Securing Da"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "posed by quantum computers. As quantum computing evolves, it can break many current encryption methods, making \nthe development of these new algorithms critical. \nTypes of Algorithms \n Lattice-Based "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "(LWE). \n Code-Based Cryptography: Based on error-correcting codes, these algorithms, such as McEliece, are believed \nto resist quantum attacks. \n Multivariate Polynomial Cryptography:  Involves syst"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": " NIST Standardization Process:  The National Institute of Standards and Technology (NIST) is leading an \ninitiative to evaluate and standardize post -quantum cryptographic algorithms. This process in"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": " Implementation Guidelines:  Once algorithms are standardized, guidelines will be developed for \nimplementation across various platforms, ensuring a smooth transition from classical to post -quantum "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n334 \n3.3. Hybrid Encryption Methods \n3.3.1. Combining Classical and Quantum-Resistant Algorithms: \n Hybrid encrypt"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "for immediate encryption needs while employing a post-quantum algorithm as a backup to secure long-term data. \n3.3.2. Benefits of a Dual Approach \n Increased Security: By combining algorithms, organi"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "allowing for a gradual transition rather than a complete overhaul.  \n Flexibility: This approach offers flexibility in adapting to various security needs and regulatory requirements, \nespecially in i"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "mitigating vulnerabilities. This includes applying security patches to address newly discovered threats.  \n Organizations should establish a routine for monitoring software updates and ensuring all s"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "breaches before they escalate. \n Developing a comprehensive incident response plan is essential for addressing security breaches swiftly and \neffectively. This plan should include protocols for conta"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "technologies c an lead to the development of more effective cryptographic solutions. Government grants, private \ninvestments, and academic partnerships can drive innovation.  \nSupporting startups and "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "companies, and government agencies can enhance knowledge sharing and resource allocation. By pooling expertise and \nfunding, these collaborations can address the complex challenges of quantum computin"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "The transition to post-quantum cryptography is essential for securing data in an era of advancing quantum technologies. \nBy exploring new algorithms, implementing hybrid methods, strengthening securit"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "advancements, they also present their challenges and limitations. For instance, post -quantum cryptography may \nrequire substantial modifications to existing systems and infrastructure due to differin"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "cryptography, and homomorphic encryption can help mitigate these  threats."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n335 \n4.  Benefits of Implementing Quantum-Safe Encryption \nQuantum computing is poised to transform various aspect"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "Fortunately, quantum -safe encryption offers a promising solution. By adopting this advanced encryption method, \norganizations can protect their data against the threats of powerful quantum computers."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "machines, quantum-safe algorithms are specifically designed to withstand even the most advanced quantum attacks.  \nAnother benefit is that implementing quantum-safe encryption does not necessitate a c"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "compromising security. \nAdditionally, adopting quantum -safe encryption reflects a proactive stance toward future -proofing data protection \nstrategies. By anticipating and addressing emerging threats"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "highly regulated industries where strong data protection standards are essential for compliance. \nWhile adopting quantum -safe encryption solutions has numerous benefits, it is essential to recognize "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "While the exact timeline for the large -scale commercialization of quantum computing remains uncertain, taking \nproactive steps to implement quantum safety measures is a prudent and necessary strategy"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "implementing new cryptographic algorithms that can withstand attacks from powerful quantum computers. Although \nprogress is being made, it will take time to thoroughly test, standardize, and implement"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "technology providers. Additionally, the transition ma y incur considerable costs associated with upgrading existing \nsystems and infrastructure. \nCompatibility with legacy systems presents another con"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "proposed algorithms demand more computational resources than traditional methods, wh ich could slow processes or \nincrease energy consumption."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n336 \n \nFigure 3 Challenges and Limitations of Quantum cryptography  \nAdditionally, while post -quantum cryptograph"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "machine learning. \nAnother area for improvement is the uncertainty surrounding when large-scale quantum computers capable of breaking \ncurrent cryptographic standards will emerge. This uncertainty com"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "robust algorithms, managing effective transitions, and ensuring compatibility —addressing these obstacles is vital for \nproviding secure communication and protecting sensitive information in a future "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "significant breakthroughs are expected to be achieved that could enhance it s computing power and efficiency. \nThis evolution will likely enable more sophisticated attacks on existing encryption metho"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "protocols may be inadequate, necessitating a proactive approach to data protection.  \n4.2.2. Regulatory and Compliance Considerations \n New Standards for Data Protection in a Quantum World : As the t"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": " Impacts on Existing Regulations:  Current regulations may need to be revised to account for the capabilities \nof quantum computing. This could involve updating compliance requirements acro ss variou"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "skills necessary to address the challenges presented by quantum computing. Training programs should focus \non post-quantum cryptography, risk assessment, and implementing new security protocols."
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n337 \n Public Awareness Campaigns on Quantum Threats:  Raising public awareness about quantum computing \nthreats i"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "from future quantum attacks. \n5. Conclusion \nIn light of the rapid advancements in quantum computing technology, the study on \"cybersecurity threats and mitigation \nstrategies in the age of quantum co"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "landscape, potentially rendering current cryptographic techniques obsolete. Traditional systems, such as RSA and ECC, \nwhich have been e ssential for securing data and communications, are particularly"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "protocols and the development of new, quantum -resistant cryptographic methods. The pace of advancements in \nquantum technology is likely to outstrip the readiness of current cryptographic systems to "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "into e xisting security infrastructures is crucial for a smooth transition and continued protection against emerging \nthreats. \nWhile the potential dangers posed by quantum computing are significant, "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "among researchers, policymakers, and indu stry leaders to tackle these challenges and promote the adoption of \nquantum-resistant technologies. Addressing the cybersecurity issues linked to quantum com"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "quantum-resistant measures and developing robust strategies are essential for protecting digital as sets and ensuring \nthe ongoing security of information systems in the quantum era.  \nRecommendations"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "quantum computers. Investing in research initiatives and funding programs focused on quantum -resistant algorithms \nis vital. Theoretical contributions should aim to expand the foundations of cryptogr"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "prevalent. \nThe study recommends immediately implementing quantum -resistant solutions in critical infrastructure and data \nprotection strategies. This entails adopting new cryptographic algorithms an"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "developing standards and gu idelines for implementing quantum -resistant technologies and fostering collaboration \nbetween industry and government bodies to ensure widespread adoption and compliance. "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "computing and post -quantum cryptography and providing specialized training for cybersecurity practitioners. \nContributions to practice should involve developing training programs and certification co"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "The study advocates for promoting collaborative research and development efforts among academia, industry, and \ngovernment agencies. Such initiatives can accelerate the development o f quantum-resista"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n338 \nthrough collaboration. Practically, this involves establishing research consortia and funding col laborative "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "Finally, the study emphasizes the need to develop strategic risk management frameworks to address the potential risks \nassociated with quantum computing. This includes creating comprehensive risk asse"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "while organizations should implement these frameworks to enhance preparedness and  resilience against quantum \nattacks. Policy recommendations should encourage the development of guidelines and best p"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "quantum-safe technologies. Contributions to theory should focus on shaping policies and standards that r eflect the \nlatest advancements in quantum cybersecurity. Practically, this means collaborating"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "cybersecurity policies in light of advancements in quantum computing.  \nCompliance with ethical standards \nDisclosure of conflict of interest \nNo conflict of interest to be disclosed.   \nReferences \n["
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "International Journal of Quantum Studies, 12(1), 65-82. https://doi.org/10.1007/s10878-021-00445-8 \n[3] African Union. (2023). African Union Convention on Cyber Security and Personal Data Protection. "
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "https://doi.org/10.1038/s41586-019-1666-5 \n[5] Aumasson, J.-P., & Laarhoven, T. (2019). Cryptographic Hash Functions and Quantum Security: Chal lenges and \nSolutions. Journal of Cryptology, 32(3), 745"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "of Financial Security, 25(2), 101-118. https://doi.org/10.1016/j.jfs.2021.100123 \n[8]  Ekert, A. K. (1991). Quantum cryptography based on Bell’s theorem. Physical Review Letters, 67(6), 661 -663. \nhtt"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "[10] International Journal of Information Security. (2021). Global Cybersecurity Trends and Quantum Computing. \nInternational Journal of Information Security, 10(4), 123-136. https://doi.org/10.1007/s"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "[12] Journal of Security Policy and Management. (2023). Cybersecurity Policies in the Quantum Era. Journal of \nSecurity Policy and Management, 14(3), 78-89. https://doi.org/10.1080/01419870.2023.22125"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "World Journal of Advanced Engineering Technology and Sciences, 2024, 13(01), 330–339 \n339 \n[13] Kheshti, R., & Keshavarz, H. (2018). The Impact of Quantum Computing on Traditional Cryptographic System"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "[15] Ministry of Internal Affairs and Communications. (2022). Cybersecurity and Quantum Computing. Retrieved \nfrom https://doi.org/10.6028/NIST.IR.8309 \n[16] National Cyber Security Centre. (2023). Qu"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "https://doi.org/10.6028/NIST.IR.8309 \n[18] National Security Agency. (2021). NSA’s Post -Quantum Cryptography. Retrieved from \nhttps://doi.org/10.6028/NIST.IR.8309 \n[19] Oyeniyi, J. Combating Fingerpr"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "Directions. \n[22] Bhadani, U. (2022). Comprehensive Survey of Threats, Cyberattacks, and Enhanced Countermeasures in RFID \nTechnology. International Journal of Innovative Research in Science, Engineer"
+  },
+  {
+    "source": "data\\quantum_computing.pdf",
+    "text": "https://doi.org/10.56025/IJARESM.2024.1108232090"
+  }
+]
