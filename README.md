@@ -22,20 +22,22 @@ The system produces a **structured answer** with **bullet points**, **citations*
 
 
 ## Project Structure
-
 multi-doc-research-agent/
-│── agent/
-│ │── loader.py # Load and chunk local documents
-│ │── vectorstore.py # Build embeddings + FAISS index
-│ │── retriever.py # Retrieve from local + Wikipedia
-│ │── planner.py # Multi-step reasoning plan
-│ │── generator.py # RAG answer synthesis with citations
-│ │── init.py
-│── data/ # Local documents (PDFs/Markdown)
-│── app.py # Streamlit UI for interactive queries
-│── requirements.txt # Python dependencies
-│── README.md
-
+1. agent/ – Core modules of the agent
+* generator.py – Summarizes documents & generates answers
+* loader.py – Loads PDFs/TXT/MD files and chunks them
+* planner.py – Defines multi-step reasoning plan
+* retriever.py – Retrieves top-k chunks from local + Wikipedia
+* vectorstore.py – Builds and loads FAISS vectorstore
+2. data/ – Document repository
+* quantum_computing.pdf
+* post_quantum.pdf
+* ai_cybersecurity.pdf
+4. app.py – Streamlit interface for user interaction
+5. README.md – Project documentation
+6. faiss.index – FAISS vectorstore index (auto-generated)
+7. faiss_meta.json – Metadata for FAISS vectorstore
+8. requirements.txt - project dependencies
 
 ## Installation
 1. Clone the repository:
