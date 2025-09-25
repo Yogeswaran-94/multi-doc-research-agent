@@ -59,7 +59,7 @@ question = st.text_area("Enter your research question:", height=120)
 col1, col2 = st.columns([2,1])
 
 with col2:
-    k = st.number_input("Top-k local results", value=5, min_value=1, max_value=20)
+    k = st.number_input("Top-k local results", value=5, min_value=1, max_value=10)
     synth_button = st.button("Generate Answer")
 
 if synth_button:
